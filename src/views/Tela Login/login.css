@@ -1,0 +1,128 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.left-side {
+  width: 1000px;
+  height: 100vh;
+  background-color: #515151;
+}
+.containt-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 25px;
+}
+.titule-left-side{
+    display: flex;
+}
+.containt-left h5 {
+  color: gray;
+}
+.containt-left h2 {
+  color: white;
+}
+.containt-left p {
+  color: gray;
+}
+.right-side {
+    width: 1000px;
+  height: 100vh;
+  background-color: #3c3c3c;
+}
+
+.containt-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 350px;
+  margin-left: 350px;
+}
+.containt-right{
+    display: flex;
+    background-color: #515151;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+.Title-Login{
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.description-login{
+    color: grey;
+    margin-left: 15px;
+}
+
+.Email{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.Email label{
+    color: grey;
+}
+.Email input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+.Senha{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.Senha label{
+    color: grey;
+}
+.Senha input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-Login button{
+    width: 250px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: purple;
+    color: white;
+}
+.Cadastro{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Cadastro p{
+    color: gray;
+}
+.Cadastro a{
+    color: purple;
+}
