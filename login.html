@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css">
+    <title>Entrar · Painel de Despesas</title>
+  </head>
+  <body>
+    <div class="login">
+      <aside class="login__imagem">
+        <div class="login__marca">
+          <p class="sidebar__titulo">Painel de Despesas</p>
+          <h1 class="login__slogan">Controle seus gastos com clareza.</h1>
+          <p class="login__descricao">
+            Registre despesas, acompanhe o total por categoria e gere relatórios
+            do seu período.
+          </p>
+        </div>
+        <img
+          src="/src/assets/hero.png"
+          class="login__ilustracao"
+          alt="Ilustração do Painel de Despesas"
+        />
+      </aside>
+
+      <main class="login__conteudo">
+        <section id="cardLogin" class="card login__card">
+          <h2 class="card__titulo">Entrar</h2>
+          <p class="login__subtitulo">Acesse com seu e-mail e senha</p>
+
+          <p id="mensagemSucessoLogin" class="mensagem-sucesso" hidden></p>
+
+          <form id="formLogin" class="form-nova-despesa" novalidate>
+            <div class="campo">
+              <label for="emailLogin">E-mail</label>
+              <input
+                type="email"
+                id="emailLogin"
+                name="email"
+                placeholder="voce@email.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="senhaLogin">Senha</label>
+              <input
+                type="password"
+                id="senhaLogin"
+                name="senha"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+              />
+            </div>
+
+            <button type="submit" id="botaoEntrar" class="botao-adicionar">
+              Entrar
+            </button>
+          </form>
+
+          <p id="mensagemErroLogin" class="mensagem-erro" hidden></p>
+
+          <p class="login__alternar">
+            Ainda não tem conta?
+            <button type="button" id="botaoIrParaCadastro" class="botao-link">
+              Cadastre-se
+            </button>
+          </p>
+        </section>
+
+        <section id="cardCadastro" class="card login__card" hidden>
+          <h2 class="card__titulo">Criar conta</h2>
+          <p class="login__subtitulo">Preencha seus dados para começar.</p>
+
+          <form id="formCadastro" class="form-nova-despesa" novalidate>
+            <div class="campo">
+              <label for="nomeCadastro">Nome completo</label>
+              <input
+                type="text"
+                id="nomeCadastro"
+                name="nomeCompleto"
+                placeholder="Ex: Maria da Silva"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="emailCadastro">E-mail</label>
+              <input
+                type="email"
+                id="emailCadastro"
+                name="email"
+                placeholder="voce@email.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="campos-lado-a-lado">
+              <div class="campo">
+                <label for="telefoneCadastro">Telefone</label>
+                <input
+                  type="tel"
+                  id="telefoneCadastro"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  inputmode="numeric"
+                  autocomplete="tel"
+                  maxlength="15"
+                />
+              </div>
+
+              <div class="campo">
+                <label for="cpfCadastro">CPF</label>
+                <input
+                  type="text"
+                  id="cpfCadastro"
+                  name="cpf"
+                  placeholder="000.000.000-00"
+                  inputmode="numeric"
+                  maxlength="14"
+                />
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="senhaCadastro">Senha</label>
+              <input
+                type="password"
+                id="senhaCadastro"
+                name="senha"
+                placeholder="Crie uma senha"
+                autocomplete="new-password"
+                aria-describedby="regrasSenha"
+              />
+              <ul id="regrasSenha" class="regras-senha">
+                <li id="regraTamanhoSenha" class="regras-senha__item">
+                  Mínimo de 6 caracteres
+                </li>
+                <li id="regraEspecialSenha" class="regras-senha__item">
+                  Pelo menos 1 caractere especial (! @ # $ % …)
+                </li>
+              </ul>
+            </div>
+
+            <button type="submit" id="botaoCadastrar" class="botao-adicionar">
+              Criar conta
+            </button>
+          </form>
+
+          <p id="mensagemErroCadastro" class="mensagem-erro" hidden></p>
+
+          <p class="login__alternar">
+            Já tem conta?
+            <button type="button" id="botaoIrParaLogin" class="botao-link">
+              Entrar
+            </button>
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/login.ts"></script>
+  </body>
+</html>
